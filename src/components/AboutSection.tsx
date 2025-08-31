@@ -85,7 +85,7 @@ const AboutSection = () => {
             </h3>
             
             <div className="space-y-8">
-              {skills.map((skill, index) => (
+              {skills.map((skill) => (
                 <div key={skill.name}>
                   <div className="flex justify-between items-center mb-3">
                     <h4 className={`font-medium ${
@@ -112,7 +112,7 @@ const AboutSection = () => {
                   
                   {/* Tecnologías */}
                   <div className="flex flex-wrap gap-2">
-                    {skill.technologies.map((tech, techIndex) => (
+                    {skill.technologies.map((tech) => (
                       <span 
                         key={tech}
                         className={`px-3 py-1 text-xs rounded-full transition-all duration-300 hover:scale-105 ${
